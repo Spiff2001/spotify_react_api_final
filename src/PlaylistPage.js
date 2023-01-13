@@ -78,6 +78,9 @@ const PlaylistPage = () => {
   popularity = Math.ceil(popularity/data.tracks.items.length)
   const show_up = localStorage.setItem("show_up",popularity)
     set_show_up(popularity)
+  if(popularity>98){
+    console.log("I'm sorry to say, but this playlist is basic as hell.")
+  }
   }
 
   const getPlaylistCoverImage = async (token,playlist_id) =>{
