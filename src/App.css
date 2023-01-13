@@ -1,0 +1,196 @@
+/* ideas for button styling came from Federico Dossena at https://fdossena.com/?p=html5cool/buttons/i.frag */
+/* and Harshii Patel at https://css-tricks.com/css-link-hover-effects/ */
+
+
+.Home {
+  text-align: center;
+  font-family:'Roboto',sans-serif;
+  font-size: large;
+  color: #FFFFFF
+}
+
+.PlaylistPage {
+  font-family:'Roboto',sans-serif;
+  text-align: left;
+  color: #FFFFFF
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+#grad1 {
+  height: 768px;
+  background-image: linear-gradient(cyan, coral) ;
+}
+
+#grad2 {
+  height: 768px;
+  background: linear-gradient(135deg, coral 30%, cyan);
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: blue;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+a {
+  font-size: 16px
+  
+}
+/* a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  
+} */
+
+
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+
+    a.button2{
+      display:inline-block;
+      padding:0.5em 3em;
+      border:0.16em solid #FFFFFF;
+      margin:0 0.3em 0.3em 0;
+      box-sizing: border-box;
+      text-decoration:none;
+      text-transform:uppercase;
+      font-family:'Roboto',sans-serif;
+      font-weight:400;
+      color:#FFFFFF;
+      text-align:center;
+      transition: all 0.15s;
+      }
+      a.button2:hover{
+      color:coral;
+      border-color:coral;
+      }
+      a.button2:active{
+      color:#BBBBBB;
+      border-color:#BBBBBB;
+      }
+      @media all and (max-width:30em){
+      a.button2{
+      display:block;
+      margin:0.4em auto;
+      }
+      }
+      /* buttons that turn coral when clicked */
+      button.button2{
+        background-color: transparent;
+        display:inline-block;
+        padding:0.5em 3em;
+        border:0.16em solid #FFFFFF; 
+        /* this controls border */
+        margin:0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration:none;
+        text-transform:uppercase;
+        font-family:'Roboto',sans-serif;
+        font-weight:400;
+        color: #FFFFFF; 
+        /* this controls the border */
+        text-align:center;
+        transition: all 0.15s;
+        }
+        button.button2:hover{
+        color:coral;
+        border-color:coral;
+        
+        }
+        button.button2:active{
+        color: coral;
+        border-color: coral;
+        }
+        @media all and (max-width:30em){
+        button.button2{
+        display:block;
+        margin:0.4em auto;
+        }
+        }
+
+        /* buttons that turn blue when clicked */
+        button.button3{
+          background-color: transparent;
+          display:inline-block;
+          padding:0.5em 3em;
+          border:0.16em solid #FFFFFF; 
+          /* this controls border */
+          margin:0 0.3em 0.3em 0;
+          box-sizing: border-box;
+          text-decoration:none;
+          text-transform:uppercase;
+          font-family:'Roboto',sans-serif;
+          font-weight:400;
+          color: #FFFFFF; 
+          /* this controls the border */
+          text-align:center;
+          transition: all 0.15s;
+          }
+          button.button3:hover{
+          color:cyan;
+          border-color:cyan;
+          
+          }
+          button.button3:active{
+          color: cyan;
+          border-color: cyan;
+          }
+          @media all and (max-width:30em){
+          button.button2{
+          display:block;
+          margin:0.4em auto;
+          }
+          }
