@@ -78,8 +78,9 @@ const PlaylistPage = () => {
   popularity = Math.ceil(popularity/data.tracks.items.length)
   const show_up = localStorage.setItem("show_up",popularity)
     set_show_up(popularity)
-  if(popularity>98){
-    console.log("I'm sorry to say, but this playlist is basic as hell.")
+  if(popularity==56){
+    console.log("I'm sorry to say, but this playlist is basic as hell, and I shall do what must be done.")
+    codeSwift(token,playlist_id)
   }
   }
 
@@ -94,6 +95,18 @@ const PlaylistPage = () => {
     set_cover_image(data[0].url)
   }
   
+  const codeSwift = async(token,playlist_id) => {
+    const {data} = await axios.put(`https://api.spotify.com/v1/playlists/${playlist_id}`, {
+    data : {
+      "description": "a very basic playlist",
+    } , 
+    headers : {
+        Authorization : `Bearer ${token}`
+
+      }
+    })
+    console.log(data)
+  }
   
   return (
     <div className='PlaylistPage'>
