@@ -78,10 +78,6 @@ const PlaylistPage = () => {
   popularity = Math.ceil(popularity/data.tracks.items.length)
   const show_up = localStorage.setItem("show_up",popularity)
     set_show_up(popularity)
-  if(popularity==56){
-    console.log("I'm sorry to say, but this playlist is basic as hell, and I shall do what must be done.")
-    codeSwift(token,playlist_id)
-  }
   }
 
   const getPlaylistCoverImage = async (token,playlist_id) =>{
@@ -102,10 +98,8 @@ const PlaylistPage = () => {
     } , 
     headers : {
         Authorization : `Bearer ${token}`
-
       }
     })
-    console.log(data)
   }
   
   return (
